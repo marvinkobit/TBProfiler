@@ -219,7 +219,7 @@ def main_update_tbdb(args):
 
 def main_create_db(args):
 
-    version_string = json.load(open('variables.json'))['tb-profiler-version']
+    version_string = json.load(open('variables.json'))['min-tb-profiler-version']
     tbp.check_db_version(version_string,tbp.__version__)
 
     if args.no_overwrite:
